@@ -6,7 +6,7 @@
       </v-col>
       <v-col cols="12" md="8" class="d-flex align-center">
         <div class="w-100">
-          <h1 class="text-h2 font-weight-bold mb-4" style="color: #f7a027;">
+          <h1 class="text-h2 font-weight-bold mb-4 accent-color">
             RECENT
             <br>
             <span class="text-grey-darken-2">PROJECTS</span>
@@ -15,8 +15,8 @@
           <v-row class="mt-8">
             <v-col cols="12" md="6" class="mb-6">
               <v-card class="bg-text pa-6 h-100">
-                <h3 class="text-h5 font-weight-bold mb-3" style="color: #f7a027;">E-Commerce Platform</h3>
-                <p class="mb-4" style="color: #f7a027;">
+                <h3 class="text-h5 font-weight-bold mb-3 accent-color">E-Commerce Platform</h3>
+                <p class="mb-4 accent-color">
                   A full-stack e-commerce solution with React, Node.js, and AWS deployment.
                 </p>
                 <div class="mb-4">
@@ -39,8 +39,8 @@
 
             <v-col cols="12" md="6" class="mb-6">
               <v-card class="bg-text pa-6 h-100">
-                <h3 class="text-h5 font-weight-bold mb-3" style="color: #f7a027;">Cloud Infrastructure</h3>
-                <p class="mb-4" style="color: #f7a027;">
+                <h3 class="text-h5 font-weight-bold mb-3 accent-color">Cloud Infrastructure</h3>
+                <p class="mb-4 accent-color">
                   Automated deployment pipeline using Terraform and Docker containers.
                 </p>
                 <div class="mb-4">
@@ -63,8 +63,8 @@
 
             <v-col cols="12" md="6" class="mb-6">
               <v-card class="bg-text pa-6 h-100">
-                <h3 class="text-h5 font-weight-bold mb-3" style="color: #f7a027;">Mobile App</h3>
-                <p class="mb-4" style="color: #f7a027;">
+                <h3 class="text-h5 font-weight-bold mb-3 accent-color">Mobile App</h3>
+                <p class="mb-4 accent-color">
                   Cross-platform mobile application built with React Native and Firebase.
                 </p>
                 <div class="mb-4">
@@ -87,8 +87,8 @@
 
             <v-col cols="12" md="6" class="mb-6">
               <v-card class="bg-text pa-6 h-100">
-                <h3 class="text-h5 font-weight-bold mb-3" style="color: #f7a027;">Data Analytics Dashboard</h3>
-                <p class="mb-4" style="color: #f7a027;">
+                <h3 class="text-h5 font-weight-bold mb-3 accent-color">Data Analytics Dashboard</h3>
+                <p class="mb-4 accent-color">
                   Real-time analytics platform with Python backend and Vue.js frontend.
                 </p>
                 <div class="mb-4">

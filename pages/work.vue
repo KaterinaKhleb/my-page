@@ -4,67 +4,104 @@
       <v-col cols="12" md="4" class="d-flex justify-start align-center pl-8">
         <ProfileCard />
       </v-col>
-      <v-col cols="12" md="8" class="d-flex align-center">
+      <v-col cols="12" md="8" class="align-center">
         <div class="w-100">
-          <h1 class="text-h2 font-weight-bold mb-4" style="color: #f7a027;">
+          <h1 class="text-h2 font-weight-bold mb-4 accent-color">
             FULL STACK
-            <br>
+            <br />
             <span class="text-grey-darken-2">DEVELOPER</span>
           </h1>
-          <p class="text-h6 mb-8" style="color: #f7a027;">
-            I'm a passionate developer with expertise across web development, app development, and 
-            backend systems. Always exploring new technologies and solving real-world problems 
-            through code.
-          </p>
 
-          <div class="mb-8">
-            <h2 class="text-h4 font-weight-bold mb-6" style="color: #f7a027;">Education</h2>
+          <div>
+            <h2 class="text-h4 font-weight-bold mb-6 accent-color">Professional Experience</h2>
+            <div
+              class="mb-4 pa-4"
+              style="background-color: rgba(247, 160, 39, 0.1); border-left: 4px solid #f7a027; border-radius: 4px">
+              <h3 class="text-h5 font-weight-bold mb-2 accent-color">Software Engineer - Bosch Engineering GmbH</h3>
+              <p class="mb-4">2019 - Present</p>
+            </div>
+
+            <h3 class="text-h6 font-weight-bold mb-4 accent-color">Key Responsibilities & Tasks Timeline</h3>
             <div class="position-relative">
               <div class="timeline-line"></div>
-              
+
               <div class="timeline-item mb-6">
                 <div class="timeline-dot bg-accent"></div>
                 <div class="ml-8">
-                  <h3 class="text-h6 font-weight-bold" style="color: #f7a027;">B.Tech Computer Science</h3>
-                  <p class="mb-2" style="color: #f7a027;">University Name, Location</p>
-                  <p style="color: #f7a027;">2018 - 2022</p>
+                  <h4 class="text-subtitle-1 font-weight-bold accent-color">AWS Solutions Architect</h4>
+                  <p class="mb-1 accent-color">2023 - current</p>
+                  <li>Designed and architected scalable cloud-based solutions and microservices.</li>
+                  <li>Creating Infrastructure for placing a SaaS on AWS Marketplace</li>
+                  <li>Devops, Networking in a multi-regional multi-account architecture</li>
+                  <li>Building serverless applications</li>
                 </div>
               </div>
 
               <div class="timeline-item mb-6">
-                <div class="timeline-dot bg-grey"></div>
+                <div class="timeline-dot bg-accent"></div>
                 <div class="ml-8">
-                  <h3 class="text-h6 font-weight-bold" style="color: #f7a027;">Higher Secondary</h3>
-                  <p class="mb-2" style="color: #f7a027;">School Name, Location</p>
-                  <p style="color: #f7a027;">2016 - 2018</p>
+                  <h4 class="text-subtitle-1 font-weight-bold accent-color">Full-Stack Development</h4>
+                  <p class="mb-1 accent-color">2021 - 2023</p>
+                  <li>Full-Stack development with NodeJS, VueJS, Svelte</li>
+                  <li>Serverless Applications</li>
+                  <li>Orchestration of microservice with Docker and Kubernetes</li>
+                  <li>CI/CD Integration with Github Workflows</li>
+                </div>
+              </div>
+
+              <div class="timeline-item mb-6">
+                <div class="timeline-dot bg-accent"></div>
+                <div class="ml-8">
+                  <h4 class="text-subtitle-1 font-weight-bold accent-color">
+                    Full-stack development, main focus on Front-end
+                  </h4>
+                  <p class="mb-1 accent-color">2019 - 2021</p>
+                  <li>Full-stack development, main focus on Front-end (VueJS, Svelte)</li>
+                  <li>CSS-based animation</li>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div>
+          <h2 class="text-h4 font-weight-bold mb-6 accent-color">Education</h2>
+          <div
+            class="mb-4 pa-4"
+            style="background-color: rgba(247, 160, 39, 0.1); border-left: 4px solid #f7a027; border-radius: 4px">
+            <h3 class="text-h5 font-weight-bold mb-2 accent-color">Bachelor of Engineering - Information Technolgy</h3>
+            <p class="mb-4 accent-color">2015-2019 | Mikkeli University of Applied Sciences, Finland</p>
+          </div>
 
-          <div>
-            <h2 class="text-h4 font-weight-bold mb-6" style="color: #f7a027;">Experience</h2>
-            <div class="position-relative">
-              <div class="timeline-line"></div>
-              
-              <div class="timeline-item mb-6">
-                <div class="timeline-dot bg-accent"></div>
-                <div class="ml-8">
-                  <h3 class="text-h6 font-weight-bold" style="color: #f7a027;">Senior Full Stack Developer</h3>
-                  <p class="mb-2" style="color: #f7a027;">Company Name</p>
-                  <p class="mb-2" style="color: #f7a027;">2023 - Present</p>
-                  <p style="color: #f7a027;">Leading development of scalable web applications and cloud infrastructure.</p>
-                </div>
+          <h3 class="text-h6 font-weight-bold mb-4 accent-color">Main study focus</h3>
+          <div class="position-relative">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item mb-6">
+              <div class="timeline-dot bg-accent"></div>
+              <div class="ml-8">
+                <h4 class="text-subtitle-1 font-weight-bold accent-color">Network Security</h4>
+                <li>Windows Servers, Linux Servers</li>
+                <li>Server Backup technologies</li>
+                <li>CCNA1 - CCNA5 Certifications</li>
               </div>
+            </div>
 
-              <div class="timeline-item">
-                <div class="timeline-dot bg-grey"></div>
-                <div class="ml-8">
-                  <h3 class="text-h6 font-weight-bold" style="color: #f7a027;">Cloud Architect</h3>
-                  <p class="mb-2" style="color: #f7a027;">Previous Company</p>
-                  <p class="mb-2" style="color: #f7a027;">2022 - 2023</p>
-                  <p style="color: #f7a027;">Designed and implemented cloud solutions using AWS services.</p>
-                </div>
+            <div class="timeline-item mb-6">
+              <div class="timeline-dot bg-accent"></div>
+              <div class="ml-8">
+                <h4 class="text-subtitle-1 font-weight-bold accent-color">Software Development</h4>
+                <li>Engineering fundamentals</li>
+                <li>Python, JS, C++</li>
+                <li>Telecommunications</li>
+              </div>
+            </div>
+
+            <div class="timeline-item mb-6">
+              <div class="timeline-dot bg-accent"></div>
+              <div class="ml-8">
+                <h4 class="text-subtitle-1 font-weight-bold accent-color">Business and Research</h4>
+                <li>Research methods</li>
+                <li>Profesisonal learning skills</li>
               </div>
             </div>
           </div>

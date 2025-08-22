@@ -11,7 +11,7 @@
             <br>
             <span class="text-grey-darken-2">TOGETHER</span>
           </h1>
-          <p class="text-h6 mb-8" style="color: #f7a027;">
+          <p class="text-h6 mb-8 accent-color">
             Collaboration on meaningful projects excites me. Feel free to reach out with your 
             ideas, and let's work together to turn them into something truly exceptional.
           </p>
@@ -19,7 +19,7 @@
           <v-form class="mt-8">
             <v-row>
               <v-col cols="12" md="6">
-                <label class="text-body-1 mb-2 d-block" style="color: #f7a027;">Your Name</label>
+                <label class="text-body-1 mb-2 d-block accent-color">Your Name</label>
                 <v-text-field
                   variant="outlined"
                   placeholder="John Doe"
@@ -29,7 +29,7 @@
                 ></v-text-field>
               </v-col>
               <v-col cols="12" md="6">
-                <label class="text-body-1 mb-2 d-block" style="color: #f7a027;">Email Address</label>
+                <label class="text-body-1 mb-2 d-block accent-color">Email Address</label>
                 <v-text-field
                   variant="outlined"
                   placeholder="you@example.com"
@@ -39,7 +39,7 @@
                 ></v-text-field>
               </v-col>
               <v-col cols="12">
-                <label class="text-body-1 mb-2 d-block" style="color: #f7a027;">Message</label>
+                <label class="text-body-1 mb-2 d-block accent-color">Message</label>
                 <v-textarea
                   variant="outlined"
                   placeholder="Write your message here..."
