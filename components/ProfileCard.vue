@@ -1,5 +1,5 @@
 <template>
-  <v-card class="bg-white rounded-lg pa-6" width="400">
+  <v-card class="bg-white rounded-lg pa-6 tilt-card" style="width: 33.333vw; max-width: 400px; min-width: 300px;">
     <div class="text-center">
       <div class="bg-background rounded-lg pa-4 mb-4">
         <div class="text-6xl mb-2">👨‍💻</div>
@@ -18,3 +18,13 @@ defineProps({
   }
 })
 </script>
+
+<style scoped>
+.tilt-card {
+  transition: transform 0.3s ease;
+}
+
+.tilt-card:hover {
+  transform: rotate(-5deg) scale(1.05);
+}
+</style>

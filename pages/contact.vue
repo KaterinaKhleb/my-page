@@ -1,17 +1,17 @@
 <template>
   <v-container class="min-h-screen d-flex align-center">
     <v-row class="fill-height">
-      <v-col cols="12" md="5" class="d-flex justify-center align-center">
+      <v-col cols="12" md="4" class="d-flex justify-start align-center pl-8">
         <ProfileCard description="A passionate Developer crafting innovative and impactful digital solutions" />
       </v-col>
-      <v-col cols="12" md="7" class="d-flex align-center">
+      <v-col cols="12" md="8" class="d-flex align-center">
         <div class="w-100">
           <h1 class="text-h2 font-weight-bold text-accent mb-4">
             LET'S WORK
             <br>
             <span class="text-grey-darken-2">TOGETHER</span>
           </h1>
-          <p class="text-h6 text-grey-lighten-1 mb-8">
+          <p class="text-h6 mb-8" style="color: #f7a027;">
             Collaboration on meaningful projects excites me. Feel free to reach out with your 
             ideas, and let's work together to turn them into something truly exceptional.
           </p>
@@ -19,7 +19,7 @@
           <v-form class="mt-8">
             <v-row>
               <v-col cols="12" md="6">
-                <label class="text-white text-body-1 mb-2 d-block">Your Name</label>
+                <label class="text-body-1 mb-2 d-block" style="color: #f7a027;">Your Name</label>
                 <v-text-field
                   variant="outlined"
                   placeholder="John Doe"
@@ -29,7 +29,7 @@
                 ></v-text-field>
               </v-col>
               <v-col cols="12" md="6">
-                <label class="text-white text-body-1 mb-2 d-block">Email Address</label>
+                <label class="text-body-1 mb-2 d-block" style="color: #f7a027;">Email Address</label>
                 <v-text-field
                   variant="outlined"
                   placeholder="you@example.com"
@@ -39,7 +39,7 @@
                 ></v-text-field>
               </v-col>
               <v-col cols="12">
-                <label class="text-white text-body-1 mb-2 d-block">Message</label>
+                <label class="text-body-1 mb-2 d-block" style="color: #f7a027;">Message</label>
                 <v-textarea
                   variant="outlined"
                   placeholder="Write your message here..."

@@ -1,12 +1,12 @@
 <template>
   <v-container class="min-h-screen d-flex align-center">
     <v-row class="fill-height">
-      <v-col cols="12" md="5" class="d-flex justify-center align-center">
+      <v-col cols="12" md="4" class="d-flex justify-start align-center pl-8">
         <ProfileCard />
       </v-col>
-      <v-col cols="12" md="7" class="d-flex align-center">
+      <v-col cols="12" md="8" class="d-flex align-center">
         <div class="w-100">
-          <h1 class="text-h2 font-weight-bold text-white mb-4">
+          <h1 class="text-h2 font-weight-bold mb-4" style="color: #f7a027;">
             RECENT
             <br>
             <span class="text-grey-darken-2">PROJECTS</span>
@@ -15,8 +15,8 @@
           <v-row class="mt-8">
             <v-col cols="12" md="6" class="mb-6">
               <v-card class="bg-text pa-6 h-100">
-                <h3 class="text-h5 font-weight-bold text-white mb-3">E-Commerce Platform</h3>
-                <p class="text-grey-lighten-1 mb-4">
+                <h3 class="text-h5 font-weight-bold mb-3" style="color: #f7a027;">E-Commerce Platform</h3>
+                <p class="mb-4" style="color: #f7a027;">
                   A full-stack e-commerce solution with React, Node.js, and AWS deployment.
                 </p>
                 <div class="mb-4">
@@ -39,8 +39,8 @@
 
             <v-col cols="12" md="6" class="mb-6">
               <v-card class="bg-text pa-6 h-100">
-                <h3 class="text-h5 font-weight-bold text-white mb-3">Cloud Infrastructure</h3>
-                <p class="text-grey-lighten-1 mb-4">
+                <h3 class="text-h5 font-weight-bold mb-3" style="color: #f7a027;">Cloud Infrastructure</h3>
+                <p class="mb-4" style="color: #f7a027;">
                   Automated deployment pipeline using Terraform and Docker containers.
                 </p>
                 <div class="mb-4">
@@ -63,8 +63,8 @@
 
             <v-col cols="12" md="6" class="mb-6">
               <v-card class="bg-text pa-6 h-100">
-                <h3 class="text-h5 font-weight-bold text-white mb-3">Mobile App</h3>
-                <p class="text-grey-lighten-1 mb-4">
+                <h3 class="text-h5 font-weight-bold mb-3" style="color: #f7a027;">Mobile App</h3>
+                <p class="mb-4" style="color: #f7a027;">
                   Cross-platform mobile application built with React Native and Firebase.
                 </p>
                 <div class="mb-4">
@@ -87,8 +87,8 @@
 
             <v-col cols="12" md="6" class="mb-6">
               <v-card class="bg-text pa-6 h-100">
-                <h3 class="text-h5 font-weight-bold text-white mb-3">Data Analytics Dashboard</h3>
-                <p class="text-grey-lighten-1 mb-4">
+                <h3 class="text-h5 font-weight-bold mb-3" style="color: #f7a027;">Data Analytics Dashboard</h3>
+                <p class="mb-4" style="color: #f7a027;">
                   Real-time analytics platform with Python backend and Vue.js frontend.
                 </p>
                 <div class="mb-4">
@@ -114,3 +114,21 @@
     </v-row>
   </v-container>
 </template>
+
+<style scoped>
+.bg-text {
+  background-color: transparent !important;
+  border: 2px solid #f7a027 !important;
+  transition: transform 0.3s ease;
+}
+
+.bg-text:hover {
+  transform: rotate(-2deg) scale(1.02);
+}
+
+.v-btn {
+  background-color: transparent !important;
+  border-color: #22264c !important;
+  color: #22264c !important;
+}
+</style>

@@ -12,7 +12,7 @@ export default defineNuxtPlugin((app) => {
         light: {
           colors: {
             background: '#f4f4ef',
-            primary: '#fb5e28',
+            primary: '#f7a027',
             surface: '#242424'
           }
         }
