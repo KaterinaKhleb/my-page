@@ -28,20 +28,20 @@ onMounted(async () => {
     const v = Math.random();
     const theta = 2 * Math.PI * u;
     const phi = Math.acos(2 * v - 1);
-    const dist = 1.25;
+    const dist = 1.8;
 
     const geometry = new THREE.BufferGeometry();
     const position = new Float32Array(3);
     position[0] = dist * Math.sin(phi) * Math.cos(theta);
     position[1] = dist * Math.sin(phi) * Math.sin(theta);
     position[2] = dist * Math.cos(phi);
-    geometry.setAttribute('position', new THREE.BufferAttribute(position, 3));
+    geometry.setAttribute("position", new THREE.BufferAttribute(position, 3));
 
-    const material = new THREE.PointsMaterial({ 
-      size: 0.05, 
+    const material = new THREE.PointsMaterial({
+      size: 0.05,
       color: 0x6366f1,
       transparent: true,
-      opacity: 0.8
+      opacity: 0.8,
     });
 
     const point = new THREE.Points(geometry, material);
@@ -55,7 +55,7 @@ onMounted(async () => {
     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
   };
 
-  window.addEventListener('mousemove', onMouseMove);
+  window.addEventListener("mousemove", onMouseMove);
 
   function animate() {
     requestAnimationFrame(animate);
@@ -63,16 +63,16 @@ onMounted(async () => {
     const time = Date.now() * 0.001;
     const mouseInfluence = Math.min(1, Math.max(0, 1 - Math.abs(mouse.x + 0.5)));
 
-    points.forEach(point => {
+    points.forEach((point) => {
       const { u, v, originalDist } = point.userData;
       const theta = 2 * Math.PI * u;
       const phi = Math.acos(2 * v - 1);
-      
-      const noise = Math.sin(time + point.position.x * 0.5) * Math.cos(time + point.position.y * 0.5) * 0.3;
+
+      const noise = Math.sin(time + point.position.x * 0.3) * Math.cos(time + point.position.y * 0.3) * 0.6;
       const dist = originalDist + noise;
-      
+
       const magnetism = (mouse.x * point.position.x + mouse.y * point.position.y) * mouseInfluence * 0.2;
-      
+
       point.position.x = (dist + magnetism) * Math.sin(phi) * Math.cos(theta) - 3;
       point.position.y = (dist + magnetism) * Math.sin(phi) * Math.sin(theta);
       point.position.z = (dist + magnetism) * Math.cos(phi);
@@ -88,11 +88,12 @@ onMounted(async () => {
 <style scoped>
 .blob-canvas {
   position: fixed;
-  top: 3vw;
+  top: 2.1vw;
   left: -32vw;
   width: 50vw;
   height: 100vh;
   z-index: 1;
   pointer-events: none;
+  opacity: 0.5;
 }
 </style>

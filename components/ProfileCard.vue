@@ -1,15 +1,20 @@
 <template>
-  <div class="text-center ma-6">
+  <!-- <v-card class="profile-card pa-6"> -->
+  <div class="text-center pa-6">
     <!-- <div class="bg-background rounded-lg pa-4 mb-4">
         <div class="text-6xl mb-2">👨‍💻</div>
       </div> -->
-    <h2 class="text-h4 font-weight-bold text-text mb-2">{{ name }}</h2>
+    <h2 class="text-h4 font-weight-bold text-text mb-2">
+      Ekaterina
+      <br />
+      Khlebushkina
+    </h2>
     <p class="text-body-1 text-grey-darken-1 mb-3">{{ description }}</p>
 
     <!-- Contact Info Sections -->
     <div class="contact-sections dark-color mb-2">
       <!-- Work Section -->
-      <div class="contact-item mb-4">
+      <div class="contact-item mb-6 pl-8">
         <div class="d-flex align-center mb-2">
           <v-icon class="contact-icon mr-3">mdi-code-tags</v-icon>
           <div>
@@ -20,7 +25,7 @@
       </div>
 
       <!-- Email Section -->
-      <div class="contact-item mb-2">
+      <div class="contact-item mb-2 pl-8">
         <div class="d-flex align-center mb-2">
           <v-icon class="contact-icon mr-3">mdi-email</v-icon>
           <div>
@@ -45,6 +50,7 @@
       </v-btn>
     </div>
   </div>
+  <!-- </v-card> -->
 </template>
 
 <script setup>
@@ -124,5 +130,6 @@ defineProps({
   margin: auto;
   max-width: 340px;
   min-width: 300px;
+  border: 0px;
 }
 </style>

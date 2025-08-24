@@ -1,5 +1,6 @@
 <template>
   <div class="page-container">
+    <BlobAnimation />
     <div class="profile-card-sticky">
       <ProfileCard />
     </div>
