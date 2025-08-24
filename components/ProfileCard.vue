@@ -1,81 +1,50 @@
 <template>
-  <v-card class="profile-card rounded-lg pa-6" style="background-color: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px);">
-    <div class="text-center">
-      <!-- <div class="bg-background rounded-lg pa-4 mb-4">
+  <div class="text-center ma-6">
+    <!-- <div class="bg-background rounded-lg pa-4 mb-4">
         <div class="text-6xl mb-2">👨‍💻</div>
       </div> -->
-      <h2 class="text-h4 font-weight-bold text-text mb-2">{{ name }}</h2>
-      <p class="text-body-1 text-grey-darken-1 mb-3">{{ description }}</p>
+    <h2 class="text-h4 font-weight-bold text-text mb-2">{{ name }}</h2>
+    <p class="text-body-1 text-grey-darken-1 mb-3">{{ description }}</p>
 
-      <!-- Contact Info Sections -->
-      <div class="contact-sections mb-2">
-        <!-- Work Section -->
-        <div class="contact-item mb-4">
-          <div class="d-flex align-center mb-2">
-            <v-icon class="contact-icon mr-3">mdi-code-tags</v-icon>
-            <div>
-              <div class="contact-label">WORK</div>
-              <div class="contact-value">{{ currentWork }}</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- CV Section -->
-        <div class="contact-item mb-2">
-          <div class="d-flex align-center mb-2">
-            <v-icon class="contact-icon mr-3">mdi-file-document</v-icon>
-            <div>
-              <div class="contact-label">CV</div>
-              <v-btn
-                :href="cvUrl"
-                download
-                variant="text"
-                class="pa-0 contact-value"
-                style="min-width: auto; height: auto">
-                Download
-              </v-btn>
-            </div>
-          </div>
-        </div>
-
-        <!-- Email Section -->
-        <div class="contact-item mb-2">
-          <div class="d-flex align-center mb-2">
-            <v-icon class="contact-icon mr-3">mdi-email</v-icon>
-            <div>
-              <div class="contact-label">EMAIL</div>
-              <div class="contact-value">{{ email }}</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Location Section -->
-        <div class="contact-item mb-2">
-          <div class="d-flex align-center mb-2">
-            <v-icon class="contact-icon mr-3">mdi-map-marker</v-icon>
-            <div>
-              <div class="contact-label">LOCATION</div>
-              <div class="contact-value">{{ location }}</div>
-            </div>
+    <!-- Contact Info Sections -->
+    <div class="contact-sections dark-color mb-2">
+      <!-- Work Section -->
+      <div class="contact-item mb-4">
+        <div class="d-flex align-center mb-2">
+          <v-icon class="contact-icon mr-3">mdi-code-tags</v-icon>
+          <div>
+            <div class="contact-label">WORK</div>
+            <div class="contact-value">{{ currentWork }}</div>
           </div>
         </div>
       </div>
 
-      <!-- Social Media Links -->
-      <div class="d-flex justify-center gap-2">
-        <v-btn
-          v-for="social in socialLinks"
-          :key="social.name"
-          :href="social.url"
-          target="_blank"
-          icon
-          size="small"
-          variant="text">
-          {{ social.icon }}
-        </v-btn>
+      <!-- Email Section -->
+      <div class="contact-item mb-2">
+        <div class="d-flex align-center mb-2">
+          <v-icon class="contact-icon mr-3">mdi-email</v-icon>
+          <div>
+            <div class="contact-label">EMAIL</div>
+            <div class="contact-value">{{ email }}</div>
+          </div>
+        </div>
       </div>
     </div>
-  </v-card>
+
+    <!-- Social Media Links -->
+    <div class="d-flex justify-center gap-2">
+      <v-btn
+        v-for="social in socialLinks"
+        :key="social.name"
+        :href="social.url"
+        target="_blank"
+        icon
+        size="small"
+        variant="text">
+        {{ social.icon }}
+      </v-btn>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -150,6 +119,7 @@ defineProps({
 }
 
 .profile-card {
+  background: transparent;
   width: 79%;
   margin: auto;
   max-width: 340px;

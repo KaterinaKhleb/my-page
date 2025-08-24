@@ -1,3 +1,28 @@
 .accent-color {
   color: #f7a027;
 }
+
+.dark-color {
+  color: #22264c;
+}
+
+.profile-card-sticky {
+  position: fixed !important;
+  left: 2rem !important;
+  top: 55vh !important;
+  transform: translateY(-50%) !important;
+  z-index: 1000 !important;
+  width: 33.333vw;
+  min-width: 300px;
+}
+
+@media (max-width: 960px) {
+  .profile-card-sticky {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}

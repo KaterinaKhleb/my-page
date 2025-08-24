@@ -124,6 +124,14 @@
   min-height: 100vh;
 }
 
+.profile-card-sticky {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 10;
+  width: 300px;
+}
+
 .content-container {
   min-height: 100vh;
   padding-top: 2rem;
@@ -151,11 +159,5 @@
   height: 24px;
   border-radius: 50%;
   border: 3px solid #242424;
-}
-
-.accent-separator {
-  border: none;
-  height: 2px;
-  background-color: #f7a027;
 }
 </style>
